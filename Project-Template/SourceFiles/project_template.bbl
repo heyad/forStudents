@@ -1,0 +1,174 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{knitr2013}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=XY}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Yihui},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{XY1}
+    \strng{fullhash}{XY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{note}{R package version 1.4.1}
+    \field{title}{knitr: A general-purpose package for dynamic report
+  generation in R}
+    \verb{url}
+    \verb http://yihui.name/knitr/
+    \endverb
+    \field{year}{2013}
+  \endentry
+
+  \entry{ELYAN2017220}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EE}{%
+         family={Elyan},
+         familyi={E\bibinitperiod},
+         given={Eyad},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GMM}{%
+         family={Gaber},
+         familyi={G\bibinitperiod},
+         given={Mohamed\bibnamedelima Medhat},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{Random forests, Genetic algorithm, Class decomposition, Life science}
+    \strng{namehash}{EEGMM1}
+    \strng{fullhash}{EEGMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.ins.2016.08.007
+    \endverb
+    \field{issn}{0020-0255}
+    \field{number}{Supplement C}
+    \field{pages}{220 \bibrangedash  234}
+    \field{title}{A genetic algorithm approach to optimising random forests
+  applied to class engineered data}
+    \verb{url}
+    \verb https://doi.org/10.1016/j.ins.2016.08.007
+    \endverb
+    \field{volume}{384}
+    \field{journaltitle}{Information Sciences}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Elyan2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EE}{%
+         family={Elyan},
+         familyi={E\bibinitperiod},
+         given={Eyad},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GMM}{%
+         family={Gaber},
+         familyi={G\bibinitperiod},
+         given={Mohamed\bibnamedelima Medhat},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EEGMM1}
+    \strng{fullhash}{EEGMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Class decomposition describes the process of segmenting each class into a
+  number of homogeneous subclasses. This can be naturally achieved through
+  clustering. Utilising class decomposition can provide a number of benefits to
+  supervised learning, especially ensembles. It can be a computationally
+  efficient way to provide a linearly separable data set without the need for
+  feature engineering required by techniques like support vector machines and
+  deep learning. For ensembles, the decomposition is a natural way to increase
+  diversity, a key factor for the success of ensemble classifiers. In this
+  paper, we propose to adopt class decomposition to the state-of-the-art
+  ensemble learning Random Forests. Medical data for patient diagnosis may
+  greatly benefit from this technique, as the same disease can have a diverse
+  of symptoms. We have experimentally validated our proposed method on a number
+  of data sets that are mainly related to the medical domain. Results reported
+  in this paper show clearly that our method has significantly improved the
+  accuracy of Random Forests.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00521-015-2064-z
+    \endverb
+    \field{issn}{1433-3058}
+    \field{number}{8}
+    \field{pages}{2279\bibrangedash 2288}
+    \field{title}{A fine-grained Random Forests using class decomposition: an
+  application to medical diagnosis}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00521-015-2064-z
+    \endverb
+    \field{volume}{27}
+    \field{journaltitle}{Neural Computing and Applications}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8489087}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=EE}{%
+         family={Elyan},
+         familyi={E\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GCM}{%
+         family={Garcia},
+         familyi={G\bibinitperiod},
+         given={C.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JC}{%
+         family={Jayne},
+         familyi={J\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{engineering;pattern classification;symbol manipulation;technical
+  drawing;unsupervised learning;symbols classification;technical
+  drawings;labeled dataset;machine learning algorithms;unsupervised learning
+  algorithms;engineering drawings;Process and Instrumentation;Engineering
+  drawings;Standards;Industries;Machine learning algorithms;Task
+  analysis;Complexity theory;Oils}
+    \strng{namehash}{EEGCMJC1}
+    \strng{fullhash}{EEGCMJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2018 International Joint Conference on Neural Networks
+  (IJCNN)}
+    \verb{doi}
+    \verb 10.1109/IJCNN.2018.8489087
+    \endverb
+    \field{issn}{2161-4407}
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{Symbols Classification in Engineering Drawings}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\endsortlist
+\endinput

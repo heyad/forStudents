@@ -1,0 +1,272 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx, verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{lipsum}
+\usepackage{blindtext}
+\usepackage{todonotes}
+\usepackage[tableposition=top]{caption}
+\usepackage{ifthen}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\setlength{\textwidth}{6.5in} 
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{0in} 
+\setlength{\evensidemargin}{0in}
+\setlength{\topmargin}{-1.5cm}
+\setlength{\parindent}{0cm}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
+\usepackage[backend=bibtex ,sorting=none]{biblatex}
+%\usepackage[backend=biber ,sorting=none]{biblatex}
+\bibliography{references}
+
+\begin{filecontents*}{references.bib}
+
+\end{filecontents*}
+
+%\fancyhf{}
+\rfoot{Eyad Elyan \thepage}
+\singlespacing
+\usepackage[affil-it]{authblk} 
+\usepackage{etoolbox}
+\usepackage{lmodern}
+
+
+
+\begin{document}
+
+
+\title{\LARGE Coursework  \\ Exemplary Report - CMM507}
+
+\author{Eyad Elyan, \textit{\href{e.elyan@rgu.ac.uk}{e.elyan@rgu.ac.uk}}}
+\maketitle
+% \begin{flushleft} \today \end{flushleft} 
+\noindent\rule{16cm}{0.4pt}
+%\underline{\hspace{3cm}
+\ \\
+%\thispagestyle{empty}
+
+\section*{Objective}
+
+% Edit here to outline the main objectives of your report
+You need to study carefully the \textcolor{blue}{.rnw} File, and see how this file was generated. This lab should help you understand the followings:
+
+\begin{itemize}
+\item Gain more understanding of reproducible report using \LaTeX and \textcolor{blue}{R}
+\item You will learn how to insert chunks of code in your document and adapt its settings (options) to generate graphics using R code 
+\item You will learn how to generate tables within your document directly from your excel sheets (interactive reporting)
+\item You will learn how to export BibTex items and cite different papers from within your documents 
+\item This lab document should help you as a starting template for your coursework
+\item Please study carefully the source file and the data files associated with this lab documents (peers, meetings excel sheets)
+
+\end{itemize}
+
+\section{Problem Statement}\label{statement}
+
+% The command below is just to generate some text, edit here for your problem statement
+\blindtext[2]
+
+\subsection{Overview}\label{over}
+
+\blindtext[2]
+
+\subsection{Motivation}\label{mot}
+%Edit here 
+\blindtext[2]
+
+\subsection{Objectives }\label{obj}
+%Edit here 
+The main objectives of this project can be outlined as follows: 
+\section{Research}\label{research}
+
+%Your research goes here, Notice how we cited other people work (check the refernces.bib)
+\blindtext[2] Knitr package was used in this work\cite{knitr2013}, more details about clustering can be found at \cite{ELYAN2017220}. A detailed description of class-decomposition can be found at \cite{Elyan2016}. This method was applied to process Engineering Drawings \cite{8489087}.
+
+
+
+
+\section {Methods}\label{methods}
+
+%Edit here 
+\blindtext[2]
+
+
+
+\subsection{Data Collection}\label{dataset}
+
+
+
+%Edit here 
+\blindtext[2]
+
+
+\subsection{Exploration - Pre-processing}\label{explore}
+
+%Edit here 
+\blindtext[2]
+
+In this project iris was used, the dataset is made of 150 rows and four features. \\
+
+Notice how we generate graphics within the sweave document. Check the following code, we will create a function that either finds $x^2$ or $x^3$ subject to parameters passed in the function
+<<>>=
+# create a vector of doubles
+myNumbers <- seq(from=-1,to=1,by=.1)
+
+# function definition
+toPower <- function (x,p=2) {
+    if (p==2)
+        return (x*x)
+    else if (p==3)
+        return (x*x*x)
+    return (x*x)
+}
+
+# call function
+squared <- toPower(myNumbers)
+cubes <- toPower(myNumbers,3)
+
+
+@
+
+An easy way to check that our function is doing the right calculation is to plot the results. The code below will generate a figure similar to Figure~\ref{fig1}: 
+<<eval=FALSE>>=
+plot(myNumbers,cubes,type='b',xlab = 'x', ylab = 'x*x',frame=FALSE,col='blue')
+@
+
+
+% See carefully how we embed the R code within latex here, check captions, and figure labels 
+\begin{figure}[H] %start a figure
+\begin{center}
+
+<<fig=TRUE,warning=FALSE,message=FALSE,echo=FALSE, results='hide',out.width=".47\\linewidth">>=
+
+plot(myNumbers,cubes,type='b',xlab = 'x', ylab = 'x*x',frame=FALSE,col='blue')
+@
+
+\caption {Simple Plot of $f(x)=x^3$ Function}
+\label{fig1}
+\end {center}
+\end {figure}
+
+
+
+
+\subsection{Experiments}\label{experiments}
+
+Now we can show how the function $f(x)=x^2$ looks like (Figure~\ref{fig2})
+
+\begin{figure}[H] %start a figure
+\begin{center}
+
+<<fig=TRUE,warning=FALSE,message=FALSE,echo=FALSE, results='hide',out.width=".47\\linewidth">>=
+
+plot(myNumbers,cubes,type='b',xlab = 'x', ylab = 'x*x',frame=FALSE,col='blue')
+@
+
+\caption {Simple Plot of $f(x)=x^3$ Function}
+\label{fig2}
+\end {center}
+\end {figure}
+
+
+\section{Conclusion and Future Work}\label{cdsmote1}
+
+%Edit here 
+\blindtext[2]
+
+
+
+
+
+\section{Project Management}\label{mgt}
+
+\subsection{Project Progress}
+%Edit here 
+\blindtext[2]
+% Pay attention to the code below including the chunk options 
+<<warning=FALSE,message=FALSE,eval=TRUE,echo=FALSE,results='asis'>>=
+require(openxlsx);
+require(readxl)
+library(stringr);library(data.table)
+library(XLConnect)
+library(xtable)
+
+# Sheets names 
+fileName <- 'data/meetings.xlsx'
+sheets <- readxl::excel_sheets(fileName)
+#length(sheets)
+# Read 1st sheet (you shouldn't have more than one sheet for this task)
+# read sheet into dataframe, and rbind
+dfs <- readWorksheet(loadWorkbook("data/meetings.xlsx"),sheet=1)
+dfs$Date <-as.character(dfs$Date)
+print(xtable(dfs,
+                    caption = "Record of Team Meetings", 
+                    label = "tab:one", 
+                    table.placement = "", 
+                    # align changes subject to number of columns 
+                    align = "lllp{8cm}llll"),include.rownames=FALSE,
+                    caption.placement = "top")
+
+    
+@
+
+
+
+
+\subsection{Peer-assessment}
+
+%Edit here 
+\blindtext[2] \\
+
+Same as we did with Table~\ref{tab:one}, we can also generate the peer-assessment table providing that we record things in an excel sheet. 
+
+<<warning=FALSE,message=FALSE,eval=TRUE,echo=FALSE,results='asis'>>=
+require(openxlsx);
+require(readxl)
+library(stringr);library(data.table)
+library(XLConnect)
+library(xtable)
+
+# Sheets names 
+fileName <- 'data/peers.xlsx'
+sheets <- readxl::excel_sheets(fileName)
+#length(sheets)
+# Read 1st sheet (you shouldn't have more than one sheet for this task)
+# read sheet into dataframe, and rbind
+dfs <- readWorksheet(loadWorkbook("data/peers.xlsx"),sheet=1)
+
+# convert fields into chars
+dfs[, ] <- lapply(dfs[, ], as.character)
+
+print(xtable(dfs,
+                    caption = "Peer Assessment out of 100", 
+                    label = "tab:two", 
+                    table.placement = "", 
+                    # align changes subject to number of columns 
+                    align = "llllll"),include.rownames=FALSE,
+                    caption.placement = "top")
+
+    
+@
+
+
+
+\section*{References}\label{pubs}
+\printbibliography[heading =none]
+
+\end{document}
