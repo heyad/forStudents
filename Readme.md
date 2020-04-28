@@ -9,10 +9,10 @@ This Git repository contains several useful resources for students, written in R
 This template was developed for RGU Computing postgraduate students. You can check the resulting [PDF](Project-Template/SourceFiles/project_template.pdf) File. This provides you a tool to generate interactive and easy to reproduce reports.
 
 
-To generate the template, we use R, Knitr, and Latex to generate a reproducible document. The Rnw (or Sweave) file allow you to create a document that contains mix of content and R code. Code will be executed within your document and the output (graphic and results) will also be embedded within your document. The project template also connects your document to **excel sheet**, read and present contents of the sheet neatly in your document. The project template also show you how to make use of **bibtex** items to cite relevant literature. A typical example of the resulting document is shown in the Figure below:  ![png](Figures/Sweave.png)
+To generate the template, we use R, Knitr, and Latex to generate a reproducible document. The Rnw (or Sweave) file allow you to create a document that contains mix of content and R code. Code will be executed within your document and the output (graphic and results) will also be embedded within your document. The project template also connects your document to **excel sheet**, read and present contents of the sheet neatly in your document. The project template also show you how to make use of **bibtex** items to cite relevant literature. A typical example of the resulting document is shown in the Figure below:  ![png](figures/Sweave.png)
  
 
-Another example from the project template is shown below, where you connect to an excel sheet, generate the corresponding latex text and embed it within your document. It also shows the list of Bibliographies cited in your report: ![png](Figures/tabels.png)
+Another example from the project template is shown below, where you connect to an excel sheet, generate the corresponding latex text and embed it within your document. It also shows the list of Bibliographies cited in your report: ![png](figures/tabels.png)
 
 
 
