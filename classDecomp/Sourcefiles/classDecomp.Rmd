@@ -2,7 +2,9 @@
 html_document:
   toc: yes
   toc_float: yes
-output: html_document
+output: 
+  output: rmarkdown::github_document
+    #keep_md: true
 ---
 #### 1. Supervised Machine Learning: 
     
@@ -324,7 +326,7 @@ From National Institute of Diabetes and Digestive and Kidney Diseases; Includes 
 
 **Load** the dataset
 ```{r}
-diabetes <- read.table("data/diabetes_pima_indians.txt",
+diabetes <- read.table("../data/diabetes_pima_indians.txt",
                        sep=',',head=FALSE,na="?")
 cat("Number of Rows in the Dataset is: ", nrow(diabetes),"\n")
 cat("Number of Columns: ", ncol(diabetes),"\n") 
