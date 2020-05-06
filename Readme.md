@@ -22,7 +22,7 @@ You can download, customise and re-run the template to suit your needs. You will
 * Download the source files at [Code](Project-Template/SourceFiles/)
 * Explore and study `project_template.Rnw` at [Code](Project-Template/SourceFiles/project_template.Rnw)* Explore the xlsx files inside the Data folder (you can change these)* Check the code used to connect to the xlsx files and generate the latex commands#### 1.2 Class Decomposition
 
-Functions for applying class-decompsition to datasets before performing classification tasks. A list of to do things (for the purpose of the coureswork). For more information about class decomposition check the [Readme File](classDecomp/Readme.md) and the code or refer to the papers below: 
+Functions for applying class-decompsition to datasets before performing classification tasks. A list of to do things (for the purpose of the coureswork). For more information about class decomposition check the [Readme File](classDecomp/Readme.md) and the [Code](classDecomp/) or refer to the papers below: 
 
 
 * **E Elyan**, M M Gaber, A genetic algorithm approach to optimising random forests applied to class engineered data, Information Sciences, Volume 384, April 2017, Pages 220-234, ISSN 0020-0255, [https://doi.org/10.1016/j.ins.2016.08.007](https://doi.org/10.1016/j.ins.2016.08.007)
