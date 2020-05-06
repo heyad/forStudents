@@ -20,7 +20,15 @@ Another example from the project template is shown below, where you connect to a
 
 You can download, customise and re-run the template to suit your needs. You will need to have R, RStudio, and Latex installed. Also you need to pay attention for the followings: 
 * Download the source files at [Code](Project-Template/SourceFiles/)
-* Explore and study `project_template.Rnw` at [Code](Project-Template/SourceFiles/project_template.Rnw)* Explore the xlsx files inside the Data folder (you can change these)* Check the code used to connect to the xlsx files and generate the latex commands
+* Explore and study `project_template.Rnw` at [Code](Project-Template/SourceFiles/project_template.Rnw)* Explore the xlsx files inside the Data folder (you can change these)* Check the code used to connect to the xlsx files and generate the latex commands#### 1.2 Class Decomposition
+
+Functions for applying class-decompsition to datasets before performing classification tasks. A list of to do things (for the purpose of the coureswork). For more information about class decomposition check the [Readme File](classDecomp/Readme.md) and the code or refer to the papers below: 
+
+
+* **E Elyan**, M M Gaber, A genetic algorithm approach to optimising random forests applied to class engineered data, Information Sciences, Volume 384, April 2017, Pages 220-234, ISSN 0020-0255, [https://doi.org/10.1016/j.ins.2016.08.007](https://doi.org/10.1016/j.ins.2016.08.007)
+
+* **E Elyan,**, Gaber, M.M. A fine-grained Random Forests using class decomposition: an application to medical diagnosis. Neural Comput & Applic 27, 2279–2288 (2016). [https://doi.org/10.1007/s00521-015-2064-z](https://doi.org/10.1007/s00521-015-2064-z)
+
 #### Comments / Questions 
 
 You can reach me at [my staff page](https://www3.rgu.ac.uk/dmstaff/elyan-eyad) or on [linkedin](http://www.linkedin.com/in/elyan )
